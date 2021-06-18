@@ -1,0 +1,66 @@
+<!--
+    author: Zachary Martin
+    date:   2021/06/11
+    note:   final project
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 4 Starting Files</title>
+
+    <script src="scripts/hangman.js" defer="defer"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Hangman</h1>
+        </header>
+        <main>            
+            <p>hello</p>
+            <p>// tinkering around with a layout for a hangman game</p>
+            <p>// I started this when I heard we were making a hangman game in class. And was curious about making it from scratch without reading the pdf first</p>
+            <p>// I didn't pick it back up after the first sitting though, and will probs scrap this</p>
+
+            <div id="word">
+                <ul id="wordList">
+                    <li class="listBorder">E</li>
+                    <li class="listBorder">N</li>
+                    <li class="listBorder">T</li>
+                    <li class="listBorder">E</li>
+                    <li class="listBorder">R</li>
+                    <li class="noBorder"></li>
+                    <li class="listBorder">A</li>
+                    <li class="noBorder"></li>
+                    <li class="listBorder">W</li>
+                    <li class="listBorder">O</li>
+                    <li class="listBorder">R</li>
+                    <li class="listBorder">D</li>
+                </ul>
+            </div>
+
+            <!--ERROR messages thrown here-->
+            <div class="errorOutput"></div>
+
+            <form id="entryForm" action="/action_page.php">
+                <label for="enter">Enter Word Here</label>
+                <input type="text" id="enter" name="enter"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+            <form action="/action_page.php">
+                <label for="guess">Character Guess</label>
+                <input type="text" id="guess" name="guess"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+
+        </main>    
+        <footer>
+            Zachary Martin
+        </footer>
+    </div>
+</body>
+</html>
